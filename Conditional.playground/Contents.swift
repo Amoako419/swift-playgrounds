@@ -30,3 +30,40 @@ case 100...999:
 default:
     print("Are you sure you want to travel this far")
 }
+
+// Understanding Sets in swift
+
+// Creating a set of planets visited during space missions
+var visitedPlanets: Set = ["Earth", "Mars", "Venus"]
+
+// Inserting new planets visited during the mission
+//visitedPlanets.insert("Jupiter")
+//visitedPlanets.insert("Neptune")
+//
+//// Inserting a duplicate planet to see the behavior of sets
+//visitedPlanets.insert("Earth")
+//
+//// Printing the complete set of visited planets
+//print("Visited planets: \(visitedPlanets)")
+//
+//// Printing the count of unique visited planets
+//print("Number of unique visited planets: \(visitedPlanets.count)")
+//
+//
+//// Creating a set of planets visited during space missions
+//var visitedPlanets: Set = ["Earth", "Mars", "Venus"]
+
+// Inserting new planets visited during the mission
+visitedPlanets.insert("Jupiter")
+visitedPlanets.insert("Neptune")
+
+// Inserting a duplicate planet to see the behavior of sets
+visitedPlanets.insert("Earth")
+
+// Printing the complete set of visited planets
+print("Visited planets: \(visitedPlanets)")
+
+// Checking if a planet has been visited
+let planetToCheck = "Mars"
+let hasBeenVisited = visitedPlanets.contains(planetToCheck)
+print("\(planetToCheck) has been visited: \(hasBeenVisited)")
