@@ -67,3 +67,20 @@ print("Visited planets: \(visitedPlanets)")
 let planetToCheck = "Mars"
 let hasBeenVisited = visitedPlanets.contains(planetToCheck)
 print("\(planetToCheck) has been visited: \(hasBeenVisited)")
+
+
+
+// Advance dictionaries
+// Initialize a nested dictionary containing planets and their moons
+var solarSystem = [
+    "Earth": ["Moon"],
+    "Mars": ["Phobos", "Deimos"],
+    "Jupiter": ["Io", "Europa", "Ganymede", "Callisto"]
+]
+
+// Access the moons of Jupiter
+let jupiterMoons = solarSystem["Jupiter"] ?? []
+print("Moons of Jupiter: \(jupiterMoons)")
+
+// Add Saturn and its moons
+solarSystem["Saturn"] = ["Titan", "Enceladus", "Mimas"]
