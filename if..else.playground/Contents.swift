@@ -23,3 +23,6 @@ if hasBreathableAtmosphere {
     let message = "\(planet1) does not support life."
     print(message)
 }
+
+
+
