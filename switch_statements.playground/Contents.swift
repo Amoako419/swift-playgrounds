@@ -23,3 +23,36 @@ case 31000:
 default:
     print("Size is unknown.")
 }
+
+
+let distanceFromSun = 8
+
+switch distanceFromSun {
+case 0..<2:
+    print("The planet is very close to the sun.")
+case 2..<5:
+    print("The planet is close to the sun.")
+case 5..<10:
+    print("The planet is mid-range from the sun.")
+default:
+    print("The planet is far from the sun.")
+}
+
+
+
+// assignment 
+var spacecraftType = "Satellite"
+
+switch spacecraftType {
+    case "Shuttle":
+    print("Spacecraft is ready for human transport")
+    
+    case "Rover":
+    print("Spacecraft is exploring the surface")
+    
+    case "Satellite":
+    print("Spacecraft is in oribit around a planet")
+    
+    default:
+    print("Unknown spacecraft")
+}
