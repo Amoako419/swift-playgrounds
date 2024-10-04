@@ -40,7 +40,7 @@ default:
 
 
 
-// assignment 
+// assignment
 var spacecraftType = "Satellite"
 
 switch spacecraftType {
@@ -55,4 +55,87 @@ switch spacecraftType {
     
     default:
     print("Unknown spacecraft")
+}
+
+
+// Nested if statements
+// Mission planning based on budget and destination suitability
+let missionBudget = 500_000
+let destinationHabitable = true
+
+if missionBudget > 250_000 {
+    if destinationHabitable {
+        print("Mission green-lit: Proceed with the launch.")
+    }
+}
+
+
+
+
+// Mission planning based on budget and destination suitability
+
+// TODO: Change initial budget from 500_000 to 300_000
+let MissionBudget = 300_000
+let DestinationHabitable = true
+let Distance = 20000
+
+if MissionBudget > 250_000 {
+    if DestinationHabitable {
+        if Distance > 300000{
+            print("The distance is too far")
+        }
+        else{
+            print("The distance is not far")
+        }
+        // TODO: Check if the destination is too far
+        print("Mission green-lit: Proceed with the launch.")
+    } else {
+        print("Mission hold: Destination is not habitable.")
+    }
+} else {
+    print("Insufficient budget for the mission.")
+}
+
+
+
+// Another Example
+// Mission preparation based on crew experience and fuel levels
+let crewExperienceYears = 6
+let fuelLevel = 120
+
+if crewExperienceYears > 5 {
+    if fuelLevel > 100 {
+        print("Mission approved: Crew has enough experience and sufficient fuel.")
+    }
+ else {
+        print("Mission hold: Insufficient fuel level.")
+    }
+} else {
+    print("Mission hold: Crew lacks experience.")
+}
+
+// Next one
+// Mission planning based on budget and destination suitability
+let missionBudget = 500_000
+let destinationHabitable = true
+let missionType = "Exploration" // Can be "Research" or "Exploration"
+
+// TODO: Add check for mission type "Research"
+// TODO: Add condition for checking if the mission is "Exploration"
+
+if missionBudget > 250_000 {
+    if destinationHabitable {
+        print("Mission green-lit: Proceed with the launch.")
+    } else {
+        print("Mission hold: Destination is not habitable.")
+    }
+    if missionBudget > 300_000 {
+    print("The mission type is for Research")
+}
+    else{
+        print("The mission for exploration")
+    }
+
+} else {
+    print("Insufficient budget for the mission.")
 }
