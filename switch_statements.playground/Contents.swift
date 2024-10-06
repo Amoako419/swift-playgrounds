@@ -116,26 +116,54 @@ if crewExperienceYears > 5 {
 
 // Next one
 // Mission planning based on budget and destination suitability
-let missionBudget = 500_000
-let destinationHabitable = true
-let missionType = "Exploration" // Can be "Research" or "Exploration"
+//let missionBudget = 500_000
+//let destinationHabitable = true
+//let missionType = "Exploration" // Can be "Research" or "Exploration"
+//
+//if missionType == "Research"{
+//  if missionBudget > 300_000 {
+//   if destinationHabitable {
+//       print("Mission green-lit: Proceed with the launch.")
+//   } else {
+//       print("Mission hold: Destination is not habitable.")
+//   }
+//
+//} else {
+//   print("Insufficient budget for the mission.")
+//}
+//}
+//
+//if missionType == "Exploration"{
+//  if missionBudget > 250_000 {
+//   if destinationHabitable {
+//       print("Mission green-lit: Proceed with the launch.")
+//   } else {
+//       print("Mission hold: Destination is not habitable.")
+//   }
+//
+//} else {
+//   print("Insufficient budget for the mission.")
+//}
+//}
 
-// TODO: Add check for mission type "Research"
-// TODO: Add condition for checking if the mission is "Exploration"
 
-if missionBudget > 250_000 {
-    if destinationHabitable {
-        print("Mission green-lit: Proceed with the launch.")
-    } else {
-        print("Mission hold: Destination is not habitable.")
+// TODO: Define the variables 'crewReady' and 'equipmentReady'
+
+// TODO: Implement the nested if conditions:
+// - If the crew is ready, check if the equipment is ready and print the appropriate message.
+// - If the crew is not ready, print the appropriate message.
+
+let crewReady = "ready"
+let equipmentReady = "operational"
+
+if crewReady == "ready"{
+    if equipmentReady == "operational"{
+        print("Mission green-lit: Ready for the lunch")
     }
-    if missionBudget > 300_000 {
-    print("The mission type is for Research")
-}
     else{
-        print("The mission for exploration")
+        print("Mission hold:Equiment is not ready")
     }
-
-} else {
-    print("Insufficient budget for the mission.")
+}
+else{
+    print("Mission hold: Crew is not ready")
 }
