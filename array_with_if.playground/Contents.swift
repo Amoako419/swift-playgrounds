@@ -18,3 +18,32 @@ if missionSupplies.contains("Water Packs") && missionSupplies.contains("First Ai
 } else {
     print("Check mission supplies.")
 }
+
+
+// Using 'not' (!) logical operator
+let isDay = false
+
+if !isDay {
+    print("Stars are visible.")
+} else {
+    print("Sun is shining.")
+}
+
+
+// Using 'not' (!) logical operator
+let radarOperational = false
+
+// TODO: Complete the condition using the 'not' (!) logical operator
+if !radarOperational {
+    print("Radar is down.")
+} else {
+    print("Radar is operational.")
+}
+
+// Using 'not equal to' (!=) comparison operator
+let powerLevel = 80
+
+// TODO: Complete the condition using the 'not equal to' (!=) comparison operator
+if powerLevel != 100 {
+    print("Power level is not at maximum.")
+}
